@@ -1,0 +1,11 @@
+postprocessor:
+  name: spca
+  APS_mode: True
+  postprocessor_args:
+    a:
+    upper:
+    reward:
+  postprocessor_sweep:
+    a: [1]
+    upper: [5]
+    reward: [10]
