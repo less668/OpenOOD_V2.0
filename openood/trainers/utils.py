@@ -6,7 +6,7 @@ from .arpl_gan_trainer import ARPLGANTrainer
 from .arpl_trainer import ARPLTrainer
 from .augmix_trainer import AugMixTrainer
 from .base_trainer import BaseTrainer
-from .craft_base_trainer import BaseTrainer as CraftBaseTrainer
+# from .craft_base_trainer import BaseTrainer as CraftBaseTrainer
 from .cider_trainer import CIDERTrainer
 from .conf_branch_trainer import ConfBranchTrainer
 from .csi_trainer import CSITrainer
@@ -44,7 +44,7 @@ def get_trainer(net, train_loader: DataLoader, val_loader: DataLoader,
     if type(train_loader) is DataLoader:
         trainers = {
             'base': BaseTrainer,
-            'craft_base': CraftBaseTrainer,
+            # 'craft_base': CraftBaseTrainer,
             'augmix': AugMixTrainer,
             'mixup': MixupTrainer,
             'regmixup': RegMixupTrainer,

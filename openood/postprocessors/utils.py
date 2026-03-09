@@ -44,6 +44,7 @@ from .rts_postprocessor import RTSPostprocessor
 from .gen_postprocessor import GENPostprocessor
 from .relation_postprocessor import RelationPostprocessor
 from .spca_postprocessor import SPCAPostprocessor
+from .craft_spca_postprocessor import SPCAPostprocessor as CraftSPCAPostprocessor
 from .grood import GrOODPostprocessor
 from .vra_postprocessor import VRAPostprocessor
 
@@ -92,7 +93,8 @@ def get_postprocessor(config: Config):
         'rankfeat': RankFeatPostprocessor,
         'gen': GENPostprocessor,
         'relation': RelationPostprocessor,
-        'spca': SPCAPostprocessor,
+        'spca': CraftSPCAPostprocessor,
+        'craft_spca': CraftSPCAPostprocessor,
         't2fnorm': T2FNormPostprocessor,
         'grood': GrOODPostprocessor,
         'vra': VRAPostprocessor,

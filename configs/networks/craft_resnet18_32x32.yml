@@ -2,5 +2,5 @@ network:
   name: craft_resnet18_32x32
   num_classes: '@{dataset.num_classes}'
   pretrained: False
-  checkpoint:
+  checkpoint: ./s0/best.ckpt
   num_gpus: '@{num_gpus}'
